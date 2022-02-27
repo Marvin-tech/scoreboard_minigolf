@@ -1,0 +1,4 @@
+Schaubilderstellung:		drawio 	https://www.diagrams.net
+Dokumentation (Markdown):	Joplin 	https://joplinapp.org
+Anwendung:				Atom		https://atom.io
+HTTP-Server				NodeJs	https://www.npmjs.com/package/http-server
