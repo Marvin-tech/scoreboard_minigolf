@@ -21,7 +21,7 @@
     </div>
 
     <main>
-      <table>
+      <table id="score_table">
         <tr>
           <td></td>
           <td>Name 1</td>
@@ -31,39 +31,153 @@
         </tr>
         <tr>
           <td>1</td>
-          <td onclick="show_point_input(1, 1)"></td>
-          <td onclick="show_point_input(1, 2)"></td>
-          <td onclick="show_point_input(1, 3)"></td>
-          <td onclick="show_point_input(1, 4)"></td>
+          <td id="player1_hole1" onclick="show_point_input(1, 1)"></td>
+          <td id="player2_hole1" onclick="show_point_input(2, 1)"></td>
+          <td id="player3_hole1" onclick="show_point_input(3, 1)"></td>
+          <td id="player4_hole1" onclick="show_point_input(4, 1)"></td>
         </tr>
+        <tr>
           <td>2</td>
-          <td onclick="show_point_input(2, 1)"></td>
-          <td onclick="show_point_input(2, 2)"></td>
-          <td onclick="show_point_input(2, 3)"></td>
-          <td onclick="show_point_input(2, 4)"></td>
+          <td id="player1_hole2" onclick="show_point_input(1, 2)"></td>
+          <td id="player2_hole2" onclick="show_point_input(2, 2)"></td>
+          <td id="player3_hole2" onclick="show_point_input(3, 2)"></td>
+          <td id="player4_hole2" onclick="show_point_input(4, 2)"></td>
+        </tr>
         <tr>
           <td>3</td>
-          <td onclick="show_point_input(3, 1)"></td>
-          <td onclick="show_point_input(3, 2)"></td>
-          <td onclick="show_point_input(3, 3)"></td>
-          <td onclick="show_point_input(3, 4)"></td>
+          <td id="player1_hole3" onclick="show_point_input(1, 3)"></td>
+          <td id="player2_hole3" onclick="show_point_input(2, 3)"></td>
+          <td id="player3_hole3" onclick="show_point_input(3, 3)"></td>
+          <td id="player4_hole3" onclick="show_point_input(4, 3)"></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td id="player1_hole4" onclick="show_point_input(1, 4)"></td>
+          <td id="player2_hole4" onclick="show_point_input(2, 4)"></td>
+          <td id="player3_hole4" onclick="show_point_input(3, 4)"></td>
+          <td id="player4_hole4" onclick="show_point_input(4, 4)"></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td id="player1_hole5" onclick="show_point_input(1, 5)"></td>
+          <td id="player2_hole5" onclick="show_point_input(2, 5)"></td>
+          <td id="player3_hole5" onclick="show_point_input(3, 5)"></td>
+          <td id="player4_hole5" onclick="show_point_input(4, 5)"></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td id="player1_hole6" onclick="show_point_input(1, 6)"></td>
+          <td id="player2_hole6" onclick="show_point_input(2, 6)"></td>
+          <td id="player3_hole6" onclick="show_point_input(3, 6)"></td>
+          <td id="player4_hole6" onclick="show_point_input(4, 6)"></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td id="player1_hole7" onclick="show_point_input(1, 7)"></td>
+          <td id="player2_hole7" onclick="show_point_input(2, 7)"></td>
+          <td id="player3_hole7" onclick="show_point_input(3, 7)"></td>
+          <td id="player4_hole7" onclick="show_point_input(4, 7)"></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td id="player1_hole8" onclick="show_point_input(1, 8)"></td>
+          <td id="player2_hole8" onclick="show_point_input(2, 8)"></td>
+          <td id="player3_hole8" onclick="show_point_input(3, 8)"></td>
+          <td id="player4_hole8" onclick="show_point_input(4, 8)"></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td id="player1_hole9" onclick="show_point_input(1, 9)"></td>
+          <td id="player2_hole9" onclick="show_point_input(2, 9)"></td>
+          <td id="player3_hole9" onclick="show_point_input(3, 9)"></td>
+          <td id="player4_hole9" onclick="show_point_input(4, 9)"></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td id="player1_hole10" onclick="show_point_input(1, 10)"></td>
+          <td id="player2_hole10" onclick="show_point_input(2, 10)"></td>
+          <td id="player3_hole10" onclick="show_point_input(3, 10)"></td>
+          <td id="player4_hole10" onclick="show_point_input(4, 10)"></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td id="player1_hole11" onclick="show_point_input(1, 11)"></td>
+          <td id="player2_hole11" onclick="show_point_input(2, 11)"></td>
+          <td id="player3_hole11" onclick="show_point_input(3, 11)"></td>
+          <td id="player4_hole11" onclick="show_point_input(4, 11)"></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td id="player1_hole12" onclick="show_point_input(1, 12)"></td>
+          <td id="player2_hole12" onclick="show_point_input(2, 12)"></td>
+          <td id="player3_hole12" onclick="show_point_input(3, 12)"></td>
+          <td id="player4_hole12" onclick="show_point_input(4, 12)"></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td id="player1_hole13" onclick="show_point_input(1, 13)"></td>
+          <td id="player2_hole13" onclick="show_point_input(2, 13)"></td>
+          <td id="player3_hole13" onclick="show_point_input(3, 13)"></td>
+          <td id="player4_hole13" onclick="show_point_input(4, 13)"></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td id="player1_hole14" onclick="show_point_input(1, 14)"></td>
+          <td id="player2_hole14" onclick="show_point_input(2, 14)"></td>
+          <td id="player3_hole14" onclick="show_point_input(3, 14)"></td>
+          <td id="player4_hole14" onclick="show_point_input(4, 14)"></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td id="player1_hole15" onclick="show_point_input(1, 15)"></td>
+          <td id="player2_hole15" onclick="show_point_input(2, 15)"></td>
+          <td id="player3_hole15" onclick="show_point_input(3, 15)"></td>
+          <td id="player4_hole15" onclick="show_point_input(4, 15)"></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td id="player1_hole16" onclick="show_point_input(1, 16)"></td>
+          <td id="player2_hole16" onclick="show_point_input(2, 16)"></td>
+          <td id="player3_hole16" onclick="show_point_input(3, 16)"></td>
+          <td id="player4_hole16" onclick="show_point_input(4, 16)"></td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td id="player1_hole17" onclick="show_point_input(1, 17)"></td>
+          <td id="player2_hole17" onclick="show_point_input(2, 17)"></td>
+          <td id="player3_hole17" onclick="show_point_input(3, 17)"></td>
+          <td id="player4_hole17" onclick="show_point_input(4, 17)"></td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td id="player1_hole18" onclick="show_point_input(1, 18)"></td>
+          <td id="player2_hole18" onclick="show_point_input(2, 18)"></td>
+          <td id="player3_hole18" onclick="show_point_input(3, 18)"></td>
+          <td id="player4_hole18" onclick="show_point_input(4, 18)"></td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td id="player1_score"></td>
+          <td id="player2_score"></td>
+          <td id="player3_score"></td>
+          <td id="player4_score"></td>
         </tr>
       </table>
 
-      <div id="blur_effect"></div>
+      <div id="blur_effect" onclick="set_point(0)"></div>
       <div id="point_input">
         <table>
           <tr>
-            <td onclick="set_point()">1</td>
-            <td onclick="set_point()">2</td>
-            <td onclick="set_point()">3</td>
+            <td onclick="set_point(1)">1</td>
+            <td onclick="set_point(2)">2</td>
+            <td onclick="set_point(3)">3</td>
           </tr>
           <tr>
-            <td onclick="set_point()">4</td>
-            <td onclick="set_point()">5</td>
-            <td onclick="set_point()">6</td>
+            <td onclick="set_point(4)">4</td>
+            <td onclick="set_point(5)">5</td>
+            <td onclick="set_point(6)">6</td>
           </tr>
-          <tr><td colspan="3" onclick="set_point()">nicht geschafft</td></tr>
+          <tr><td colspan="3" onclick="set_point(7)">nicht geschafft</td></tr>
         </table>
       </div>
     </main>
