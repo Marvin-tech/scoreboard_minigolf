@@ -12,7 +12,6 @@ html, body {
   min-height: 100%;
   background-color: white;
   border: solid 2px black;
-  display: none;
 }
 
 #startpage p, #startpage h1 {

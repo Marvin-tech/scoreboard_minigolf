@@ -11,12 +11,12 @@
       <h1>Willkommen!</h1>
       <p>Bitte Namen eintragen:</p>
 
-      <form class="name_registration" action="index.html" method="post">
-        <input type="text" name="" value="" maxlength="16">
-        <input type="text" name="" value="" maxlength="16">
-        <input type="text" name="" value="" maxlength="16">
-        <input type="text" name="" value="" maxlength="16">
-        <input type="text" name="" value="" maxlength="16">
+      <form class="name_registration">
+        <input type="text" id="name0" value="" maxlength="16">
+        <input type="text" id="name1" value="" maxlength="16">
+        <input type="text" id="name2" value="" maxlength="16">
+        <input type="text" id="name3" value="" maxlength="16">
+        <input type="button" value="Start" onclick="start_game()">
       </form>
     </div>
 
@@ -24,10 +24,10 @@
       <table id="score_table">
         <tr>
           <td></td>
-          <td>Name 1</td>
-          <td>Name 2</td>
-          <td>Name 3</td>
-          <td>Name 4</td>
+          <td id="cell_name0">Name 1</td>
+          <td id="cell_name1">Name 2</td>
+          <td id="cell_name2">Name 3</td>
+          <td id="cell_name3">Name 4</td>
         </tr>
         <tr>
           <td>1</td>

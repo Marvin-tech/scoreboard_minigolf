@@ -10,13 +10,53 @@ function show_point_input(col, row) {
   document.getElementById("point_input").style.display = "block";
 }
 
+function start_game() {
+  var names = [
+    document.getElementById("name0").value,
+    document.getElementById("name1").value,
+    document.getElementById("name2").value,
+    document.getElementById("name3").value
+  ]
+  var table_name_cells = [
+    document.getElementById("cell_name0"),
+    document.getElementById("cell_name1"),
+    document.getElementById("cell_name2"),
+    document.getElementById("cell_name3")
+  ]
+
+  names = sort_array(names);
+
+  if (names.length === 0) {
+    console.log("no name entered"); //TODO: GUI implementation
+    return;
+  }
+
+  for (var i = 0; i < names.length; i++) {
+    table_name_cells[i].innerHTML = names[i];
+  }
+
+  document.getElementById("startpage").style.display = "none";
+}
+
+function sort_array(array) {
+  var sorted_array = [];
+
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] !== "") {
+      sorted_array.push(array[i]);
+    }
+  }
+
+  return sorted_array;
+}
+
 function set_point(value) {
   //hide point_input
   document.getElementById("blur_effect").style.display = "none";
   document.getElementById("point_input").style.display = "none";
 
   //if no value is transmitted, menu just closes --> blur_effect closes menu
-  if (value == 0) {
+  if (value === 0) {
     return;
   }
 
