@@ -12,16 +12,16 @@ function show_point_input(col, row) {
 
 function start_game() {
   var names = [
-    document.getElementById("name0").value,
     document.getElementById("name1").value,
     document.getElementById("name2").value,
-    document.getElementById("name3").value
+    document.getElementById("name3").value,
+    document.getElementById("name4").value
   ]
   var table_name_cells = [
-    document.getElementById("cell_name0"),
     document.getElementById("cell_name1"),
     document.getElementById("cell_name2"),
-    document.getElementById("cell_name3")
+    document.getElementById("cell_name3"),
+    document.getElementById("cell_name4")
   ]
 
   names = sort_array(names);
@@ -35,7 +35,27 @@ function start_game() {
     table_name_cells[i].innerHTML = names[i];
   }
 
+  //recognize empty cells (less than 4 people)
+  for (var i = 4; i >= 1; i--) {
+    console.log(names[i-1]);
+    if (names[i-1] == null) {
+      hide_column(i);
+    }
+  }
+
   document.getElementById("startpage").style.display = "none";
+  document.getElementById("main").style.display = "inline";
+}
+
+function hide_column(col_id) {
+  document.getElementById("cell_name" + col_id).style.display = "none";
+
+  for (var i = 1; i <= 18; i++) {
+    let cell = document.getElementById("player" + String(col_id) + "_hole" + String(i));
+    cell.style.display = "none";
+  }
+
+  document.getElementById("player" + String(col_id) + "_score").style.display = "none";
 }
 
 function sort_array(array) {

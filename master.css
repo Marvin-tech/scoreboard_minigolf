@@ -7,11 +7,13 @@ html, body {
 }
 
 #startpage {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  background-color: white;
-  border: solid 2px black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  min-width: 80%;
+  min-height: 90vh;
+  margin: auto;
 }
 
 #startpage p, #startpage h1 {
@@ -26,14 +28,19 @@ html, body {
 
   max-width: 70%;
   margin: auto;
-  background-color: red;
 }
 
-#startpage .name_registration input {
+#startpage input {
   margin: 0.8rem;
   min-height: 3rem;
+  min-width: 60vw;
   font-size: 2rem;
   text-align: center;
+}
+
+
+main {
+  display: none;
 }
 
 main table td {
